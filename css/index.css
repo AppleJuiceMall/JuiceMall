@@ -3500,9 +3500,9 @@ h1.page-title + .tag-cloud-list {
   padding: 12px 36px;
   width: 100%;
   font-size: 1.3em;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -3513,11 +3513,6 @@ h1.page-title + .tag-cloud-list {
   #nav {
     padding: 0 16px;
   }
-}
-#nav.show {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
 }
 #nav #blog_name {
   display: inline;
