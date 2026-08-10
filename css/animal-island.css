@@ -1,0 +1,965 @@
+/*
+ * Animal Island Theme for Typora
+ * Inspired by animal-island-ui (https://github.com/guokaigdg/animal-island-ui)
+ * Aesthetic: Animal Crossing — warm cream paper, mint accents, 3D pillow shadows
+ */
+
+:root {
+
+
+    /* === Primary (mint / leaf) === */
+    --ai-primary:          #19c8b9;
+    --ai-primary-hover:    #3dd4c6;
+    --ai-primary-active:   #11a89b;
+    --ai-primary-bg:       #e6f9f6;
+
+    /* === Text (warm brown) === */
+    --ai-text-main:        #000000;
+    --ai-text-body:        #000000;
+    --ai-text-secondary:   #333333;
+    --ai-text-muted:       #555555;
+    --ai-text-disabled:    #888888;
+
+    /* === Surfaces (white paper, almost-white desk) === */
+    --ai-bg-app:           #faf9f3;   /* desk: near-white with a hint of warmth */
+    --ai-bg-paper:         #ffffff;   /* paper: pure white */
+    --ai-bg-soft:          #efe9d6;   /* callout / code bg (kept warm to stand out) */
+    --ai-bg-input:         #f7f5ec;
+
+    /* === Borders === */
+    --ai-border:           #a89c83;
+    --ai-border-light:     #c9bea4;
+    --ai-border-soft:      #d8cdb2;
+
+    /* === Status === */
+    --ai-success:          #6fba2c;
+    --ai-warning:          #f5c31c;
+    --ai-error:            #e05a5a;
+    --ai-focus-yellow:     #ffcc00;
+
+    /* === 3D Shadows === */
+    --ai-shadow-button:    #bdaea0;
+    --ai-shadow-input:     #d4c9b4;
+    --ai-shadow-card:      0 3px 10px 0 rgba(61, 52, 40, 0.10);
+    --ai-shadow-large:     0 8px 24px 0 rgba(61, 52, 40, 0.14);
+    --ai-shadow-deep:      0 4px 10px rgba(107, 92, 67, 0.32);
+
+    /* === Radius === */
+    --ai-radius-sm:        12px;
+    --ai-radius:           18px;
+    --ai-radius-lg:        24px;
+    --ai-radius-pill:      999px;
+
+    /* === Type === */
+    --ai-font:             -apple-system, BlinkMacSystemFont,
+    "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "PingFang SC", "Noto Sans SC", "Noto Sans JP",
+    "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    --ai-mono:             "JetBrains Mono", "Fira Code", "Cascadia Code",
+    "SF Mono", Consolas, Menlo, monospace;
+
+
+}
+
+/* =========================================================
+ *   App canvas
+ *   ========================================================= */
+#article-container, #article-container  {
+
+
+    font-size: 16px;
+
+
+}
+
+#article-container, #article-container  {
+
+
+    font-family: var(--ai-font);
+    color: var(--ai-text-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.01em;
+
+
+}
+
+#article-container, #article-container  {
+
+
+    line-height: 1.75;
+    font-size: 16px;
+    color: var(--ai-text-body);
+
+
+}
+
+#article-container > *:first-child, #article-container > *:first-child  {
+
+
+    margin-top: 0 !important;
+
+
+}
+
+/* =========================================================
+ *   Headings
+ *   ========================================================= */
+#article-container h1, #article-container h1, #article-container h2, #article-container h2, #article-container h3, #article-container h3, #article-container h4, #article-container h4, #article-container h5, #article-container h5, #article-container h6, #article-container h6  {
+
+
+    color: var(--ai-text-main);
+    font-family: var(--ai-font);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    line-height: 1.35;
+
+
+}
+
+/* H1 — 居中勋章 · 三色胶囊下划线 */
+#article-container h1, #article-container h1  {
+
+
+    font-size: 2.25em;
+    font-weight: 900;
+    text-align: center;
+    color: var(--ai-text-main);
+    margin: 1.3em 0 1.1em;
+    padding-bottom: 0.5em;
+    line-height: 1.3;
+
+
+}
+
+#article-container h1::after, #article-container h1::after  {
+
+
+    content: "";
+    display: block;
+    width: 110px;
+    height: 8px;
+    margin: 0.55em auto 0;
+    border-radius: var(--ai-radius-pill);
+    background: linear-gradient(to right,
+                                var(--ai-primary)   0%, var(--ai-primary)   40%,
+                                var(--ai-warning)   40%, var(--ai-warning)  60%,
+                                var(--ai-primary)   60%, var(--ai-primary)  100%);
+    box-shadow: 0 2px 0 0 var(--ai-shadow-input);
+
+
+}
+
+/* H2 — 卡片便签 · 薄荷渐变 + 左厚竖块 */
+#article-container h2, #article-container h2  {
+
+
+    font-size: 1.7em;
+    font-weight: 800;
+    color: var(--ai-text-main);
+    margin: 1.8em 0 0.9em;
+    padding: 12px 20px 12px 22px;
+    background: linear-gradient(
+        to right,
+        var(--ai-primary-bg) 0%,
+                                var(--ai-bg-soft) 55%,
+                                transparent 100%
+    );
+    border-left: 8px solid var(--ai-primary);
+    border-radius: 0 var(--ai-radius) var(--ai-radius) 0;
+    box-shadow: 0 2px 0 0 var(--ai-shadow-input);
+
+
+}
+
+/* H3 — 小节 · 左竖线 + 底部虚线 */
+#article-container h3, #article-container h3  {
+
+
+    font-size: 1.32em;
+    font-weight: 700;
+    color: var(--ai-text-main);
+    margin: 1.5em 0 0.7em;
+    padding: 4px 0 8px 14px;
+    border-left: 5px solid var(--ai-primary);
+    border-bottom: 2px dashed var(--ai-border-soft);
+
+
+}
+
+/* H4 — 薄荷文字 + 短"记号笔"下划线 */
+#article-container h4, #article-container h4  {
+
+
+    font-size: 1.15em;
+    font-weight: 800;
+    color: var(--ai-primary-active);
+    margin: 1.3em 0 0.5em;
+    padding-bottom: 6px;
+    background-image: linear-gradient(
+        to right,
+        var(--ai-primary) 0,
+                                      var(--ai-primary) 36px,
+                                      transparent 36px
+    );
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+
+
+}
+
+/* H5 — 米色胶囊贴纸 (inline-block) */
+#article-container h5, #article-container h5  {
+
+
+    font-size: 0.98em;
+    font-weight: 800;
+    color: var(--ai-text-main);
+    margin: 1.1em 0 0.4em;
+    display: inline-block;
+    padding: 3px 14px;
+    background: var(--ai-bg-soft);
+    border: 1.5px solid var(--ai-border-soft);
+    border-radius: var(--ai-radius-pill);
+
+
+}
+
+/* H6 — 大写微标签 */
+#article-container h6, #article-container h6  {
+
+
+    font-size: 0.82em;
+    font-weight: 800;
+    color: var(--ai-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1em 0 0.3em;
+
+
+}
+
+/* =========================================================
+ *   Paragraph / inline
+ *   ========================================================= */
+#article-container p, #article-container p  {
+
+
+    margin: 0.8em 0;
+    line-height: 1.8;
+
+
+}
+
+#article-container strong, #article-container strong, #article-container b, #article-container b  {
+
+
+    color: var(--ai-text-main);
+    font-weight: 800;
+
+
+}
+
+#article-container em, #article-container em, #article-container i, #article-container i  {
+
+
+    color: var(--ai-text-main);
+
+
+}
+
+#article-container mark, #article-container mark  {
+
+
+    background: var(--ai-focus-yellow);
+    color: var(--ai-text-main);
+    padding: 0 4px;
+    border-radius: 4px;
+
+
+}
+
+#article-container del, #article-container del, #article-container s, #article-container s  {
+
+
+    color: var(--ai-text-disabled);
+
+
+}
+
+/* =========================================================
+ *   Links
+ *   ========================================================= */
+#article-container a, #article-container a  {
+
+
+    color: var(--ai-primary-active);
+    text-decoration: none;
+    border-bottom: 2px dotted var(--ai-primary);
+    padding: 0 2px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+#article-container a:hover, #article-container a:hover  {
+
+
+    color: white;
+    background: var(--ai-primary);
+    border-bottom-color: transparent;
+    border-radius: 5px;
+
+
+}
+
+/* =========================================================
+ *   Lists
+ *   ========================================================= */
+#article-container ul, #article-container ul, #article-container ol, #article-container ol  {
+
+
+    padding-left: 1.8em;
+    margin: 0.7em 0;
+
+
+}
+
+#article-container li, #article-container li  {
+
+
+    margin: 0.25em 0;
+
+
+}
+
+#article-container ul > li::marker, #article-container ul > li::marker  {
+
+
+    color: var(--ai-primary);
+
+
+}
+
+#article-container ol > li::marker, #article-container ol > li::marker  {
+
+
+    color: var(--ai-primary-active);
+    font-weight: 800;
+
+
+}
+
+/* Task list — soft 3D checkbox */
+#article-container .md-task-list-item > input, #article-container .md-task-list-item > input  {
+
+
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: -3px;
+    background: var(--ai-bg-input);
+    border: 2.5px solid var(--ai-border-light);
+    border-radius: 6px;
+    box-shadow: 0 2px 0 0 var(--ai-shadow-input);
+    cursor: pointer;
+    transition: all 0.15s;
+    position: relative;
+
+
+}
+
+#article-container .md-task-list-item > input:checked, #article-container .md-task-list-item > input:checked  {
+
+
+    background: var(--ai-success);
+    border-color: var(--ai-success);
+    box-shadow: 0 2px 0 0 #5a9e1e;
+
+
+}
+
+#article-container .md-task-list-item > input:checked::after, #article-container .md-task-list-item > input:checked::after  {
+
+
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+
+
+}
+
+/* =========================================================
+ *   Blockquote — pillow card
+ *   ========================================================= */
+#article-container blockquote, #article-container blockquote  {
+
+
+    margin: 1em 0;
+    padding: 12px 20px;
+    background: var(--ai-bg-soft);
+    border-left: 6px solid var(--ai-primary);
+    border-radius: var(--ai-radius);
+    color: var(--ai-text-body);
+    box-shadow: 0 3px 0 0 var(--ai-shadow-input);
+
+
+}
+
+#article-container blockquote p, #article-container blockquote p  {
+
+
+    margin: 0.4em 0;
+
+
+}
+
+#article-container blockquote blockquote, #article-container blockquote blockquote  {
+
+
+    background: rgba(255, 255, 255, 0.45);
+    border-left-color: var(--ai-warning);
+    box-shadow: none;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Inline KaTeX/MathJax */
+#article-container .MathJax, #article-container .MathJax, #article-container mjx-container, #article-container mjx-container  {
+
+
+    color: var(--ai-text-main);
+
+
+}
+
+/* =========================================================
+ *   Horizontal rule — dashed paw-print path
+ *   ========================================================= */
+#article-container hr, #article-container hr  {
+
+
+    border: none;
+    height: 18px;
+    width: 70%;
+    margin: 2.4em auto;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 18'><ellipse cx='16' cy='13' rx='5' ry='3.8' fill='%2319c8b9'/><circle cx='9' cy='6' r='2.3' fill='%2319c8b9'/><circle cx='14' cy='3' r='2.3' fill='%2319c8b9'/><circle cx='19' cy='3' r='2.3' fill='%2319c8b9'/><circle cx='24' cy='6' r='2.3' fill='%2319c8b9'/></svg>");
+    background-size: 80px 18px;
+    background-repeat: repeat-x;
+    background-position: center;
+
+
+}
+
+/* =========================================================
+ *   Tables
+ *   ========================================================= */
+#article-container table, #article-container table  {
+
+
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.2em auto;
+    border: 2px solid var(--ai-border-light);
+    border-radius: var(--ai-radius);
+    overflow: hidden;
+    box-shadow: var(--ai-shadow-card);
+
+
+}
+
+#article-container thead, #article-container thead  {
+
+
+    background: var(--ai-primary);
+
+
+}
+
+#article-container th, #article-container th  {
+
+
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    padding: 10px 16px;
+    text-align: left;
+    border: none;
+
+
+}
+
+#article-container td, #article-container td  {
+
+
+    padding: 10px 16px;
+    border-top: 1.5px dashed var(--ai-border-soft);
+    color: var(--ai-text-body);
+
+
+}
+
+#article-container tbody tr:nth-child(even) td, #article-container tbody tr:nth-child(even) td  {
+
+
+    background: var(--ai-bg-soft);
+
+
+}
+
+#article-container tbody tr:hover td, #article-container tbody tr:hover td  {
+
+
+    background: var(--ai-primary-bg);
+
+
+}
+
+/* =========================================================
+ *   Images
+ *   ========================================================= */
+#article-container img, #article-container img  {
+
+
+    max-width: 100%;
+    border-radius: var(--ai-radius);
+    box-shadow: var(--ai-shadow-deep);
+
+
+}
+
+#article-container p > img:only-child, #article-container p > img:only-child  {
+
+
+    display: block;
+    margin: 1em auto;
+
+
+}
+
+/* =========================================================
+ *   Footnotes
+ *   ========================================================= */
+#article-container .md-footnote, #article-container .md-footnote  {
+
+
+    background: var(--ai-primary-bg);
+    color: var(--ai-primary-active);
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-weight: 700;
+
+
+}
+
+/* =========================================================
+ *   Selection / focus
+ *   ========================================================= */
+#article-container ::selection, #article-container ::selection  {
+
+
+    background: var(--ai-focus-yellow);
+    color: var(--ai-text-main);
+
+
+}
+
+#article-container .md-focus-container, #article-container .md-focus-container  {
+
+
+    outline: none;
+
+
+}
+
+/* =========================================================
+ *   Sidebar
+ *   ========================================================= */
+#article-container .sidebar, #article-container .sidebar, #article-container #typora-sidebar, #article-container #typora-sidebar, #article-container .sidebar-content, #article-container .sidebar-content, #article-container .sidebar-content-content, #article-container .sidebar-content-content, #article-container .sidebar-tabs, #article-container .sidebar-tabs  {
+
+
+    background-color: var(--ai-bg-app) !important;
+    color: var(--ai-text-body) !important;
+    font-family: var(--ai-font);
+    border-right: 1.5px solid var(--ai-border-soft);
+
+
+}
+
+#article-container .sidebar-tabs .sidebar-tab, #article-container .sidebar-tabs .sidebar-tab  {
+
+
+    color: var(--ai-text-secondary);
+
+
+}
+
+#article-container .sidebar-tabs .sidebar-tab.active, #article-container .sidebar-tabs .sidebar-tab.active  {
+
+
+    color: var(--ai-primary-active);
+    border-bottom: 3px solid var(--ai-primary);
+
+
+}
+
+#article-container .outline-item, #article-container .outline-item, #article-container .file-list-item, #article-container .file-list-item  {
+
+
+    border-radius: var(--ai-radius-sm);
+    margin: 2px 6px;
+    padding: 6px 10px;
+    color: var(--ai-text-body);
+
+
+}
+
+#article-container .outline-item:hover, #article-container .outline-item:hover, #article-container .file-list-item:hover, #article-container .file-list-item:hover  {
+
+
+    background: var(--ai-bg-soft) !important;
+    color: var(--ai-text-main) !important;
+
+
+}
+
+#article-container .outline-active, #article-container .outline-active, #article-container .file-list-item-selected, #article-container .file-list-item-selected  {
+
+
+    background: var(--ai-primary-bg) !important;
+    color: var(--ai-primary-active) !important;
+    font-weight: 700;
+
+
+}
+
+/* Search */
+#article-container .searchpanel-search-option-btn, #article-container .searchpanel-search-option-btn  {
+
+
+    background: var(--ai-bg-input);
+    border: 2px solid var(--ai-border-light);
+    border-radius: var(--ai-radius-sm);
+
+
+}
+
+/* =========================================================
+ *   Quick open / find bar
+ *   ========================================================= */
+#article-container #typora-quick-open, #article-container #typora-quick-open  {
+
+
+    background: var(--ai-bg-app) !important;
+
+
+}
+
+#article-container #typora-quick-open-input, #article-container #typora-quick-open-input, #article-container .searchpanel-search-input, #article-container .searchpanel-search-input, #article-container input[type=], #article-container input[type=]  {
+
+
+    background: var(--ai-bg-input);
+    border: 2.5px solid var(--ai-border-light) !important;
+    border-radius: var(--ai-radius);
+    box-shadow: 0 3px 0 0 var(--ai-shadow-input);
+    color: var(--ai-text-body);
+    padding: 6px 12px;
+    transition: all 0.15s;
+
+
+}
+
+#article-container #typora-quick-open-input:focus, #article-container #typora-quick-open-input:focus, #article-container input[type=]:focus, #article-container input[type=]:focus  {
+
+
+    border-color: var(--ai-primary) !important;
+    box-shadow: 0 3px 0 0 var(--ai-primary-active);
+    outline: none;
+
+
+}
+
+#article-container .btn, #article-container .btn, #article-container .export-item, #article-container .export-item {
+
+
+    background: white;
+    border: 2px solid var(--ai-border-light);
+    border-radius: var(--ai-radius-sm);
+    box-shadow: 0 3px 0 0 var(--ai-shadow-button);
+    color: var(--ai-text-main);
+    font-weight: 700;
+    padding: 4px 12px;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+
+
+
+
+#article-container .btn-primary, #article-container .btn-primary {
+
+
+    background: var(--ai-primary);
+    color: white;
+    border-color: var(--ai-primary-active);
+    box-shadow: 0 3px 0 0 var(--ai-primary-active);
+
+
+}
+
+
+
+/* =========================================================
+ *   Footer / status bar
+ *   ========================================================= */
+#article-container footer, #article-container footer, #article-container #footer, #article-container #footer  {
+
+
+    background: var(--ai-bg-app);
+    color: var(--ai-text-secondary);
+    border-top: 2px dashed var(--ai-border-soft);
+    font-family: var(--ai-font);
+
+
+}
+
+#article-container .footer-item-info, #article-container .footer-item-info  {
+
+
+    color: var(--ai-text-muted);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+ *   Misc UI
+ *   ========================================================= */
+#article-container .popover-title, #article-container .popover-title  {
+
+
+    background: var(--ai-primary-bg);
+    color: var(--ai-primary-active);
+    border-radius: var(--ai-radius-sm) var(--ai-radius-sm) 0 0;
+    font-weight: 800;
+
+
+}
+
+#article-container .popover, #article-container .popover  {
+
+
+    background: var(--ai-bg-paper);
+    border: 2px solid var(--ai-border-light);
+    border-radius: var(--ai-radius);
+    box-shadow: var(--ai-shadow-large);
+    color: var(--ai-text-body);
+
+
+}
+
+
+#article-container .popover.top    > .arrow:after, #article-container .popover.top    > .arrow:after  {
+
+    border-top-color: var(--ai-bg-paper);
+
+}
+#article-container .popover.left   > .arrow:after, #article-container .popover.left   > .arrow:after  {
+
+    border-left-color: var(--ai-bg-paper);
+
+}
+#article-container .popover.right  > .arrow:after, #article-container .popover.right  > .arrow:after  {
+
+    border-right-color: var(--ai-bg-paper);
+
+}
+
+#article-container .tip, #article-container .tip, #article-container .tooltip, #article-container .tooltip  {
+
+
+    background: var(--ai-text-main);
+    color: white;
+    border-radius: var(--ai-radius-sm);
+    box-shadow: var(--ai-shadow-card);
+    font-family: var(--ai-font);
+
+
+}
+
+/* Auto-suggest / dropdown */
+#article-container .auto-suggest-container, #article-container .auto-suggest-container, #article-container .dropdown-menu, #article-container .dropdown-menu  {
+
+
+    background: var(--ai-bg-paper);
+    border: 2px solid var(--ai-border-light);
+    border-radius: var(--ai-radius);
+    box-shadow: var(--ai-shadow-large);
+
+
+}
+
+#article-container .dropdown-menu > li > a, #article-container .dropdown-menu > li > a  {
+
+
+    color: var(--ai-text-body);
+
+
+}
+
+#article-container .dropdown-menu > li > a:hover, #article-container .dropdown-menu > li > a:hover  {
+
+
+    background: var(--ai-primary-bg);
+    color: var(--ai-primary-active);
+
+
+}
+
+/* Modal */
+#article-container .modal-content, #article-container .modal-content  {
+
+
+    background: var(--ai-bg-paper);
+    border: 2px solid var(--ai-border-light);
+    border-radius: var(--ai-radius-lg);
+    box-shadow: var(--ai-shadow-large);
+    color: var(--ai-text-body);
+
+
+}
+
+/* Scrollbar */
+#article-container ::-webkit-scrollbar, #article-container ::-webkit-scrollbar  {
+
+
+    width: 10px;
+    height: 10px;
+
+
+}
+
+#article-container ::-webkit-scrollbar-track, #article-container ::-webkit-scrollbar-track  {
+
+
+    background: var(--ai-bg-app);
+
+
+}
+
+#article-container ::-webkit-scrollbar-thumb, #article-container ::-webkit-scrollbar-thumb  {
+
+
+    background: var(--ai-border-light);
+    border-radius: var(--ai-radius-pill);
+    border: 2px solid var(--ai-bg-app);
+
+
+}
+
+#article-container ::-webkit-scrollbar-thumb:hover, #article-container ::-webkit-scrollbar-thumb:hover  {
+
+
+    background: var(--ai-primary);
+
+
+}
+
+/* =========================================================
+ *   Print
+ *   ========================================================= */
+@media print  {
+    #article-container blockquote, #article-container blockquote, #article-container table, #article-container table {
+
+        box-shadow: none;
+
+    }
+
+
+}
