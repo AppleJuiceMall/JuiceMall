@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JuiceMall</title>
+    <link>https://www.juicemall.org/</link>
+    <description>技术、校园与文化</description>
+    <language>zh-CN</language>
+    <copyright>All rights reserved 2026, Hyer</copyright>
+    <lastBuildDate>Sat, 15 Aug 2026 14:39:20 GMT</lastBuildDate>
+    <generator>Hexo</generator>
+    <atom:link href="https://www.juicemall.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>我们的图书馆：不止于阅读</title>
+      <link>https://www.juicemall.org/posts/58ae47a0-97fe-11f1-90c9-5d5ecabb2604/</link>
+      <description>
+        <![CDATA[<p>为了避讳需要，校名统一隐去了。</p>
+<blockquote>
+<p><img src="https://www.juicemall.org/posts/58ae47a0-97fe-11f1-90c9-5d5ecabb2604/pic1.JPG" alt="pic1"></p>
+<p>花都校区冠冕楼 图</p>
+</blockquote>
+<p>冠，是千百年来读书人的风骨；冕，是思想者头顶的星光。</p>
+<p>冠冕楼，是花都校区的图书馆，也是荔湾校区的校史博物馆。</p>]]>
+      </description>
+      <author>Hyer</author>
+      <category domain="https://www.juicemall.org/categories/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB/">校园生活</category>
+      <category domain="https://www.juicemall.org/tags/%E6%A0%A1%E5%9B%AD%E4%BD%93%E9%AA%8C/">校园体验</category>
+      <pubDate>Fri, 14 Aug 2026 16:36:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>焚决：高一新生军训指南</title>
+      <link>https://www.juicemall.org/posts/375a91f0-97c5-11f1-9622-e58578bfb683/</link>
+      <description>
+        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker"]]>
+      </description>
+      <author>Hyer</author>
+      <category domain="https://www.juicemall.org/categories/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB/">校园生活</category>
+      <category domain="https://www.juicemall.org/categories/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB/%E7%84%9A%E5%86%B3/">焚决</category>
+      <category domain="https://www.juicemall.org/tags/%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97/">办事指南</category>
+      <category domain="https://www.juicemall.org/tags/%E7%84%9A%E5%86%B3/">焚决</category>
+      <pubDate>Fri, 14 Aug 2026 09:47:51 GMT</pubDate>
+    </item>
+    <item>
+      <title>作为高中生，我的第一张外币卡该如何选择？</title>
+      <link>https://www.juicemall.org/posts/bfeb6460-9624-11f1-92bf-e94970215f7d/</link>
+      <description>
+        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker"]]>
+      </description>
+      <author>Hyer</author>
+      <category domain="https://www.juicemall.org/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/">日常生活</category>
+      <category domain="https://www.juicemall.org/tags/%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97/">办事指南</category>
+      <pubDate>Thu, 13 Aug 2026 06:06:40 GMT</pubDate>
+    </item>
+    <item>
+      <title>白嫖必看！如何在GY打印在读证明？</title>
+      <link>https://www.juicemall.org/posts/b7e19fe0-9616-11f1-83b8-3b30843a9d6f/</link>
+      <description>
+        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker"]]>
+      </description>
+      <author>Hyer</author>
+      <category domain="https://www.juicemall.org/categories/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB/">校园生活</category>
+      <category domain="https://www.juicemall.org/tags/%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97/">办事指南</category>
+      <pubDate>Wed, 12 Aug 2026 06:26:14 GMT</pubDate>
+    </item>
+    <item>
+      <title>JuiceMall简介</title>
+      <link>https://www.juicemall.org/posts/2e85a990-9467-11f1-970f-1f518b7f56aa/</link>
+      <description>新用户必看</description>
+      <author>Hyer</author>
+      <category domain="https://www.juicemall.org/categories/%E5%85%AC%E5%91%8A/">公告</category>
+      <category domain="https://www.juicemall.org/tags/%E5%85%AC%E5%91%8A/">公告</category>
+      <pubDate>Mon, 10 Aug 2026 02:57:10 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
